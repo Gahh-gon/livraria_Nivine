@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+header{
+    display: flex;
+    background-color: #FFFFFF; 
+height: 117px;
+   
+    
+}
+header img {
+    padding-bottom: 30px;
+    width: 180px;
+    height: 212px;
+}
+nav {
+    display: flex;
+    gap: 40%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30%;
+
+}
+nav a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+nav a:hover {
+opacity: 0.5;
+}
+
+main{
+    display: flex;
+    background-color:#A0D7D4 ;
+    background-image: url("assets/fundo_main.svg");
+height: 420px;
+gap: 25%;
+
+
+}
+main img{
+   padding-left: 10% ;
+}
+main div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15%;
+  gap: 5%;
+}
+div h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+   
+  
+}
+div p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+   
+}
+@media (max-width:1100px) {
+    header img {
+        padding-bottom: 3%;
+        width: 30%;
+    
+    }
+    nav {
+   
+        gap: 10%;
+        padding-left: 8%;
+    
+    }
+    nav a{
+        font-size:20px;
+    }
+
+    main{
+       
+    gap: 0%;
+    height: 400px;
+    
+    
+    }
+    main img{
+       padding-left: 0% ;
+       width: 50%;
+    }
+    main div {
+      display: flex;
+      flex-direction: column;
+      padding-top: 15%;
+      gap: 2%;
+    }
+}
+
+@media (max-width:900px) {
+
+    header img {
+        padding-bottom: 6%;
+        width: 30%;
+    
+    }
+    nav {
+   
+        gap: 10%;
+        padding-left: 8%;
+    
+    }
+    nav a{
+        font-size:20px;
+    }
+
+    main{
+       
+    gap: 0%;
+    height: 300px;
+    
+    
+    }
+    main img{
+       padding-left: 0% ;
+       width: 50%;
+    }
+    main div {
+      display: flex;
+      flex-direction: column;
+      padding-top: 15%;
+      gap: 2%;
+    }
+    
+}
+
+
+@media (max-width:700px) {
+    
+
+    header img {
+        padding-bottom: 6%;
+        width: 30%;
+    
+    }
+    nav {
+   
+        gap: 10%;
+        padding-left: 8%;
+    
+    }
+    nav a{
+        font-size:20px;
+    }
+
+    main{
+       
+    gap: 0%;
+    height: 300px;
+    
+    
+    }
+    main img{
+       padding-left: 0% ;
+       width: 50%;
+    }
+    main div {
+      display: flex;
+      flex-direction: column;
+      padding-top: 15%;
+      gap: 2%;
+    }
+
+
+}
+
+@media ( max-width: 667px) {
+    header img {
+        padding-bottom: 10%;
+        width: 30%;
+    
+    }
+    nav {
+   
+        gap: 10%;
+        padding-left: 10%;
+    
+    }
+    nav a{
+        font-size: 14px;
+    }
+
+    main{
+       
+    gap: 0%;
+    height: 220px;
+    
+    
+    }
+    main img{
+       padding-left: 0% ;
+       width: 50%;
+    }
+    main div {
+      display: flex;
+      flex-direction: column;
+      padding-top: 15%;
+      gap: 2%;
+    }
+    div h2{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 20px;
+      text-align: center;
+       
+      
+    }
+    div p{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bolder;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+}
