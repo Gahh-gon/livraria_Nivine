@@ -229,7 +229,7 @@ div p{
 @media (max-width:338px) {
     nav {
    
-        gap: 5%;
+        gap: 2%;
         padding-left: 0%;
     
     }
@@ -238,6 +238,7 @@ div p{
     }
     nav a{
         font-size: 12px;
+        gap: 10px;
     }
     main img{
         padding-left: 0% ;
@@ -259,3 +260,101 @@ div p{
         font-size: 12px;
      }
 }
+
+
+
+.container{
+    position: relative;
+    padding: 15px;
+    max-width: 70%;
+    margin: 0 auto;
+}
+.gallery-wrapper{
+    overflow-x: auto;/*se o conteundo fizer um overflow (elemento filho passou do elemento do conteundo pai )
+    ele faça um auto coloca as barras ali
+    */
+}
+.gallery{
+    display: flex;
+    flex-flow: row nowrap ;/*não esta deixando ele quebrar flex-flow e la define se vai row ou column etc e no segundo valor se vai ter quebrar de linha ou não*/
+    gap: 15px;
+}
+.arrow-left,
+.arrow-right {
+  position: absolute;
+/* isso esta fazendo que elemento fique na altura total */
+  top: 40%; /* se esse e 0*/
+  left: -6%;
+  bottom: 0;/*e esse também 0 ele vai tentar encontrar o topo estica o elemento */
+
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  color: #fff;
+  transition: all 600ms ease-in-out;
+  
+  cursor: pointer;
+  border: none;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.arrow-right {
+  right: 0;
+  left: 104%;
+  text-align: right;
+
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 40px;
+}
+
+.item {
+  width: 190px;
+  height: 190px;
+  flex-shrink: 0;/*Esta fazendo nenhum item diminuir para caber*/
+  transition: all 600ms ease-in-out;
+  opacity: 0.5;
+}
+
+.current-item {
+  opacity: 1;
+}
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  /* escoder a scrollbar  */
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .gallery-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .cyan {
+    background: cyan;
+  }
+  
+  .deeppink {
+    background: deeppink;
+  }
+  
+  .turquoise {
+    background: turquoise;
+  }
+  
+  .darkblue {
+    background: darkblue;
+  }
+  
+  .purple {
+    background: purple;
+  }
+  
